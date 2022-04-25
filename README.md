@@ -6,6 +6,3 @@
 </div>
 
 # Hi, I'm Nick Lowe aka Snickbit
-
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
