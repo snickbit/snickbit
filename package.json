@@ -1,0 +1,49 @@
+{
+	"name": "@snickbit/snickbit",
+	"private": true,
+	"version": "30.9.0",
+	"description": "A full-stack developer that probably spends too much time coding, and definitely spent too much time on this.",
+	"license": "MIT",
+	"exports": {
+		"require": "./dist/index.js",
+		"import": "./dist/index.mjs",
+		"types": "./dist/index.d.ts"
+	},
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"docs": "typedoc",
+		"test": "jest"
+	},
+	"jest": {
+		"preset": "ts-jest"
+	},
+	"devDependencies": {
+		"@types/jest": "^27.4.1",
+		"jest": "^27.5.1",
+		"ts-jest": "^27.1.4",
+		"tsup": "^5.12.7",
+		"typedoc": "^0.22.15",
+		"typedoc-plugin-markdown": "^3.12.0",
+		"typescript": "^4.6.4"
+	},
+	"engines": {
+		"node": ">= 12"
+	},
+	"tsup": {
+		"entry": [
+			"src/index.ts"
+		],
+		"clean": true,
+		"dts": true,
+		"format": [
+			"esm",
+			"cjs"
+		]
+	}
+}
