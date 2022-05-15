@@ -252,22 +252,22 @@
                             <div class="ct-chart">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="216" height="160" class="ct-chart-pie">
                                     <g class="ct-series ct-series-a">
-                                        <path d="M143.465,146.085A75,75,0,0,0,108,5L108,80Z" class="ct-slice-pie" ct:value="0.3232635182245402"/>
+                                        <path d="M143.477,146.079A75,75,0,0,0,108,5L108,80Z" class="ct-slice-pie" ct:value="0.3232469650298967"/>
                                     </g>
                                     <g class="ct-series ct-series-b">
-                                        <path d="M75.392,12.46A75,75,0,1,0,143.696,145.961L108,80Z" class="ct-slice-pie" ct:value="0.38858666750702153"/>
+                                        <path d="M75.394,12.459A75,75,0,1,0,143.708,145.954L108,80Z" class="ct-slice-pie" ct:value="0.38861797584628593"/>
                                     </g>
                                     <g class="ct-series ct-series-c">
-                                        <path d="M104.554,5.079A75,75,0,0,0,75.156,12.574L108,80Z" class="ct-slice-pie" ct:value="0.04927893611070625"/>
+                                        <path d="M104.554,5.079A75,75,0,0,0,75.158,12.573L108,80Z" class="ct-slice-pie" ct:value="0.049276412708666506"/>
                                     </g>
                                     <g class="ct-series ct-series-d">
-                                        <path d="M108,5A75,75,0,0,0,104.292,5.092L108,80Z" class="ct-slice-pie" ct:value="0.0056093689066063716"/>
+                                        <path d="M108,5A75,75,0,0,0,104.292,5.092L108,80Z" class="ct-slice-pie" ct:value="0.00560908167043494"/>
                                     </g>
                                     <g>
-                                        <text dx="144.36853256455373" dy="70.85779900128014" text-anchor="middle" class="ct-label">JavaScript</text>
-                                        <text dx="74.58608760779953" dy="97.02235173665352" text-anchor="middle" class="ct-label">TypeScript</text>
-                                        <text dx="98.79940508239007" dy="43.646196166535056" text-anchor="middle" class="ct-label">Vue</text>
-                                        <text dx="107.1381937458279" dy="42.50990410814784" text-anchor="middle" class="ct-label">SCSS</text>
+                                        <text dx="144.36772373396468" dy="70.85458199916361" text-anchor="middle" class="ct-label">JavaScript</text>
+                                        <text dx="74.58733777173411" dy="97.02480551488958" text-anchor="middle" class="ct-label">TypeScript</text>
+                                        <text dx="98.80000689758437" dy="43.64604386156157" text-anchor="middle" class="ct-label">Vue</text>
+                                        <text dx="107.13825129038666" dy="42.50990278538238" text-anchor="middle" class="ct-label">SCSS</text>
                                     </g>
                                 </svg>
                                 <div class="ct-legend">
@@ -290,13 +290,13 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"/>
                             </svg>
-                            ~89 coding hours recorded
+                            ~90 coding hours recorded
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M1.5 2.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v8.5a.25.25 0 01-.25.25h-6.5a.75.75 0 00-.53.22L4.5 14.44v-2.19a.75.75 0 00-.75-.75h-2a.25.25 0 01-.25-.25v-8.5zM1.75 1A1.75 1.75 0 000 2.75v8.5C0 12.216.784 13 1.75 13H3v1.543a1.457 1.457 0 002.487 1.03L8.061 13h6.189A1.75 1.75 0 0016 11.25v-8.5A1.75 1.75 0 0014.25 1H1.75zm5.03 3.47a.75.75 0 010 1.06L5.31 7l1.47 1.47a.75.75 0 01-1.06 1.06l-2-2a.75.75 0 010-1.06l2-2a.75.75 0 011.06 0zm2.44 0a.75.75 0 000 1.06L10.69 7 9.22 8.47a.75.75 0 001.06 1.06l2-2a.75.75 0 000-1.06l-2-2a.75.75 0 00-1.06 0z"/>
                             </svg>
-                            Mostly coding in TypeScript
+                            Mostly coding in Vue.js
                         </div>
                     </section>
                     <section class="largeable-column-fields">
@@ -319,29 +319,29 @@
                         <h3>Language activity</h3>
                         <div class="chart-bars horizontal">
                             <div class="entry">
-                                <span class="name">TypeScript</span>
-                                <div class="bar" style="width: 33.624%; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
-                                <span class="value">42%</span>
-                            </div>
-                            <div class="entry">
                                 <span class="name">Vue.js</span>
-                                <div class="bar" style="width: 30.28%; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
+                                <div class="bar" style="width: 30.560000000000002%; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
                                 <span class="value">38%</span>
                             </div>
                             <div class="entry">
+                                <span class="name">TypeScript</span>
+                                <div class="bar" style="width: 29.936000000000003%; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
+                                <span class="value">37%</span>
+                            </div>
+                            <div class="entry">
                                 <span class="name">JSON</span>
-                                <div class="bar" style="width: 6.944%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                                <div class="bar" style="width: 6.896%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 <span class="value">9%</span>
                             </div>
                             <div class="entry">
-                                <span class="name">JavaScript</span>
-                                <div class="bar" style="width: 2.752%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                                <span class="value">3%</span>
+                                <span class="name">Markdown</span>
+                                <div class="bar" style="width: 3.104%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                                <span class="value">4%</span>
                             </div>
                             <div class="entry">
-                                <span class="name">SCSS</span>
-                                <div class="bar" style="width: 1.96%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                                <span class="value">2%</span>
+                                <span class="name">JavaScript</span>
+                                <div class="bar" style="width: 2.944%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                                <span class="value">4%</span>
                             </div>
                         </div>
                     </section>
@@ -349,7 +349,7 @@
             </section>
             <footer>
                 <span>These metrics do not include all private contributions</span>
-                <span>Last updated 15 May 2022, 00:11:13 (timezone America/Detroit) with lowlighter/metrics@3.23.0</span>
+                <span>Last updated 15 May 2022, 01:10:23 (timezone America/Detroit) with lowlighter/metrics@3.23.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
