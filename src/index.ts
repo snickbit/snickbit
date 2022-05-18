@@ -20,10 +20,6 @@ type Coding = '💻 x ⏳ x 2' | string
  * A full-stack developer that probably spends too much time coding, and definitely spent too much time on this.
  */
 export class Snickbit {
-	/**
-	 * Singleton instance of Snickbit. There can only be one.
-	 */
-	private static _instance: Snickbit
 
 	/**
 	 * The name I go by when I'm not coding.
@@ -82,6 +78,11 @@ export class Snickbit {
 			url: 'https://isthisdubbed.com'
 		}
 	]
+
+	/**
+	 * Singleton instance of Snickbit. There can only be one.
+	 */
+	private static _instance: Snickbit
 
 	constructor() {
 		// There can be only one
