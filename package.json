@@ -1,7 +1,7 @@
 {
 	"name": "@snickbit/snickbit",
-	"private": true,
 	"version": "30.9.0",
+	"private": true,
 	"description": "A full-stack developer that probably spends too much time coding, and definitely spent too much time on this.",
 	"license": "MIT",
 	"exports": {
