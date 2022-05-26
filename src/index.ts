@@ -11,16 +11,15 @@ type PlayGuitar = '🎸 x ⏳'
 type Sing = '🎤 x ⏳'
 type PlayPiano = '🎹 x ⏳'
 type RecordMusic = '(🎛🎚 + 🎧) x ⏳'
-type MusicMaking = PlayGuitar | Sing | PlayPiano | RecordMusic
+type MusicMaking = PlayGuitar | PlayPiano | RecordMusic | Sing
 type VideoGaming = '(🎮 + 💀) x ⏳'
 type FamilyTime = '👧👩👨👩👦 x ⏳'
-type Coding = '💻 x ⏳ x 2' | string
+type Coding = string | '💻 x ⏳ x 2'
 
 /**
  * A full-stack developer that probably spends too much time coding, and definitely spent too much time on this.
  */
 export class Snickbit {
-
 	/**
 	 * The name I go by when I'm not coding.
 	 */
@@ -39,45 +38,71 @@ export class Snickbit {
 	/**
 	 * Programming languages I'm proficient in
 	 */
-	private languages: string[] = ['JavaScript', 'Liquid', 'PHP', 'SCSS/CSS', 'Shell/Bash', 'TypeScript']
+	private languages: string[] = [
+		'JavaScript',
+		'Liquid',
+		'PHP',
+		'SCSS/CSS',
+		'Shell/Bash',
+		'TypeScript'
+	]
 
 	/**
 	 * Database systems I'm proficient in
 	 */
-	private databases: string[] = ['CouchDB', 'MongoDB', 'MySQL', 'Redis']
+	private databases: string[] = [
+		'CouchDB',
+		'MongoDB',
+		'MySQL',
+		'Redis'
+	]
 
 	/**
 	 * Frameworks I'm proficient in, in various languages
 	 */
-	private frameworks: string[] = ['Bootstrap', 'Express', 'jQuery', 'Laravel', 'Node', 'Quasar', 'Vue', 'WordPress']
+	private frameworks: string[] = [
+		'Bootstrap',
+		'Express',
+		'jQuery',
+		'Laravel',
+		'Node',
+		'Quasar',
+		'Vue',
+		'WordPress'
+	]
 
 	/**
 	 * Tools & utilities that I use
 	 */
-	private tools: string[] = ['DigitalOcean', 'Docker', 'esbuild', 'eslint', 'Git', 'Intellij Idea', 'Jest', 'pnpm', 'Vite', 'VS Code']
+	private tools: string[] = [
+		'DigitalOcean',
+		'Docker',
+		'esbuild',
+		'eslint',
+		'Git',
+		'Intellij Idea',
+		'Jest',
+		'pnpm',
+		'Vite',
+		'VS Code'
+	]
 
 	/**
 	 * Some projects I'm currently working on
 	 */
-	private projects: SnickbitProject[] = [
-		{
-			name: 'snickbit.com',
-			description: 'My personal website built with Quasar (vue.js), Feathers.js, and MongoDB.',
-			url: 'https://snickbit.com'
-		},
-
-		{
-			name: `Arbiter's Aide`,
-			description: 'Laravel & Vue SPA web app for organizing Table Top RPG campaigns like Dungeons & Dragons. Uses Socket.io & Redis for real-time updates.',
-			url: 'https://arbitersaide.com'
-		},
-
-		{
-			name: 'IsThisDubbed?',
-			description: 'Single-serving website built with Laravel. Uses multiple APIs, web scraping, and community moderation for data and corrections',
-			url: 'https://isthisdubbed.com'
-		}
-	]
+	private projects: SnickbitProject[] = [{
+		name: 'snickbit.com',
+		description: 'My personal website built with Quasar (vue.js), Feathers.js, and MongoDB.',
+		url: 'https://snickbit.com'
+	}, {
+		name: `Arbiter's Aide`,
+		description: 'Laravel & Vue SPA web app for organizing Table Top RPG campaigns like Dungeons & Dragons. Uses Socket.io & Redis for real-time updates.',
+		url: 'https://arbitersaide.com'
+	}, {
+		name: 'IsThisDubbed?',
+		description: 'Single-serving website built with Laravel. Uses multiple APIs, web scraping, and community moderation for data and corrections',
+		url: 'https://isthisdubbed.com'
+	}]
 
 	/**
 	 * Singleton instance of Snickbit. There can only be one.
@@ -139,7 +164,12 @@ export class Snickbit {
 	 * (🎛🎚 + 🎧) x ⏳
 	 */
 	async writeMusic(): Promise<MusicMaking> {
-		return ['🎸 x ⏳', '🎤 x ⏳', '🎹 x ⏳', '(🎛🎚 + 🎧) x ⏳'][Math.floor(Math.random() * 4)] as MusicMaking
+		return [
+			'🎸 x ⏳',
+			'🎤 x ⏳',
+			'🎹 x ⏳',
+			'(🎛🎚 + 🎧) x ⏳'
+		][Math.floor(Math.random() * 4)] as MusicMaking
 	}
 }
 
