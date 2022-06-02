@@ -27,6 +27,8 @@ export class Snickbit {
 
 	/**
 	 * My preferred pronouns
+	 * @returns
+	 * he, him, his
 	 */
 	static readonly pronouns: string[] = ['he', 'him', 'his']
 

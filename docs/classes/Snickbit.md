@@ -38,6 +38,9 @@ ___
 
 My preferred pronouns
 
+**`returns`**
+he, him, his
+
 ___
 
 ### children
