@@ -1,4 +1,3 @@
-### Generic template
 # hidden folders & junk files
 .*/
 .*
@@ -14,5 +13,8 @@ node_modules/
 # Compiled files
 dist/
 
-# keep
+# Keep
 !.git*
+!.*rc*
+!.*ignore
+!.*config
