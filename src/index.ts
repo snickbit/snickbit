@@ -7,14 +7,15 @@ interface SnickbitProject {
 	url: string
 }
 
-type PlayGuitar = '🎸 x ⏳'
-type Sing = '🎤 x ⏳'
-type PlayPiano = '🎹 x ⏳'
-type RecordMusic = '(🎛🎚 + 🎧) x ⏳'
-type MusicMaking = PlayGuitar | PlayPiano | RecordMusic | Sing
-type VideoGaming = '(🎮 + 💀) x ⏳'
-type FamilyTime = '👧👩👨👩👦 x ⏳'
-type Coding = string | '💻 x ⏳ x 2'
+export type PlayGuitar = '🎸 x ⏳'
+export type Sing = '🎤 x ⏳'
+export type PlayPiano = '🎹 x ⏳'
+export type RecordMusic = '(🎛🎚 + 🎧) x ⏳'
+export type MusicMaking = PlayGuitar | PlayPiano | RecordMusic | Sing
+export type VideoGaming = '(🎮 + 💀) x ⏳'
+export type FamilyTime = '👧👩👨👩👦 x ⏳'
+export type Coding = string | '💻 x ⏳ x 2'
+export type RealName = 'Nick Lowe'
 
 /**
  * A full-stack developer that probably spends too much time coding, and definitely spent too much time on this.
@@ -22,20 +23,22 @@ type Coding = string | '💻 x ⏳ x 2'
 export class Snickbit {
 	/**
 	 * The name I go by when I'm not coding.
+	 * @returns {'Nick Lowe'}
 	 */
-	static readonly $name = 'Nick Lowe'
+	readonly realName: RealName = 'Nick Lowe'
 
 	/**
 	 * My preferred pronouns
-	 * @returns
+	 * @returns {['he', 'him', 'his']}
 	 * he, him, his
 	 */
-	static readonly pronouns: string[] = ['he', 'him', 'his']
+	readonly pronouns: ['he', 'him', 'his'] = ['he', 'him', 'his']
 
 	/**
 	 * How many children I have
+	 * @returns {2}
 	 */
-	static readonly children = 2
+	readonly children = 2
 
 	/**
 	 * Programming languages I'm proficient in
@@ -64,13 +67,14 @@ export class Snickbit {
 	 */
 	private frameworks: string[] = [
 		'Bootstrap',
+		'Electron',
 		'Express',
 		'jQuery',
 		'Laravel',
 		'Node',
 		'Quasar',
-		'Vue',
-		'WordPress'
+		'React',
+		'Vue'
 	]
 
 	/**
@@ -173,11 +177,71 @@ export class Snickbit {
 			'(🎛🎚 + 🎧) x ⏳'
 		][Math.floor(Math.random() * 4)] as MusicMaking
 	}
+
+	/**
+	 * Learn a new programming language
+	 * @param language
+	 */
+	learnLanguage(language: string): void {
+		this.languages.push(language)
+	}
+
+	/**
+	 * Learn a new database system
+	 * @param database
+	 */
+	learnDatabase(database: string): void {
+		this.databases.push(database)
+	}
+
+	/**
+	 * Learn a new framework
+	 * @param framework
+	 */
+	learnFramework(framework: string): void {
+		this.frameworks.push(framework)
+	}
+
+	/**
+	 * Learn a new tool
+	 * @param tool
+	 */
+	learnTool(tool: string): void {
+		this.tools.push(tool)
+	}
+
+
+	/**
+	 * Get the list of languages I know
+	 */
+	knownLanguages(): string[] {
+		return this.languages
+	}
+
+
+	/**
+	 * Get the list of databases I know
+	 */
+	knownDatabases(): string[] {
+		return this.databases
+	}
+
+	/**
+	 * Get the list of frameworks I know
+	 */
+	knownFrameworks(): string[] {
+		return this.frameworks
+	}
+
+	/**
+	 * Get the list of tools I know
+	 */
+	knownTools(): string[] {
+		return this.tools
+	}
 }
 
 /**
  * A full-stack developer that probably spends too much time coding, and definitely spent too much time on this.
  */
-export function snickbit() {
-	return new Snickbit()
-}
+export const snickbit = new Snickbit()
