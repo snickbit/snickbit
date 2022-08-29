@@ -56,7 +56,12 @@ describe('snickbit methods', () => {
 
 	it('should return one of 🎸 x ⏳ | 🎤 x ⏳ | 🎹 x ⏳ | (🎛🎚 + 🎧) x ⏳ when calling writeMusic 6 times', async () => {
 		for (let i = 0; i < 6; i++) {
-			expect(['🎸 x ⏳', '🎤 x ⏳', '🎹 x ⏳', '(🎛🎚 + 🎧) x ⏳'].includes(await instance.writeMusic())).toBeTruthy()
+			expect([
+				'🎸 x ⏳',
+				'🎤 x ⏳',
+				'🎹 x ⏳',
+				'(🎛🎚 + 🎧) x ⏳'
+			].includes(await instance.writeMusic())).toBeTruthy()
 		}
 	})
 })
