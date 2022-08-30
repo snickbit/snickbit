@@ -4,56 +4,61 @@ A full-stack developer that probably spends too much time coding, and definitely
 
 ## Table of contents
 
-### Properties
-
-- [$name](Snickbit.md#$name)
-- [pronouns](Snickbit.md#pronouns)
-- [children](Snickbit.md#children)
-
 ### Constructors
 
 - [constructor](Snickbit.md#constructor)
 
+### Properties
+
+- [children](Snickbit.md#children)
+- [pronouns](Snickbit.md#pronouns)
+- [realName](Snickbit.md#realname)
+
 ### Methods
 
 - [addProject](Snickbit.md#addproject)
-- [writeCode](Snickbit.md#writecode)
 - [beWithFamily](Snickbit.md#bewithfamily)
+- [knownDatabases](Snickbit.md#knowndatabases)
+- [knownFrameworks](Snickbit.md#knownframeworks)
+- [knownLanguages](Snickbit.md#knownlanguages)
+- [knownTools](Snickbit.md#knowntools)
+- [learnDatabase](Snickbit.md#learndatabase)
+- [learnFramework](Snickbit.md#learnframework)
+- [learnLanguage](Snickbit.md#learnlanguage)
+- [learnTool](Snickbit.md#learntool)
 - [playVideoGames](Snickbit.md#playvideogames)
+- [writeCode](Snickbit.md#writecode)
 - [writeMusic](Snickbit.md#writemusic)
-
-## Properties
-
-### $name
-
-▪ `Static` `Readonly` **$name**: ``"Nick Lowe"``
-
-The name I go by when I'm not coding.
-
-___
-
-### pronouns
-
-▪ `Static` `Readonly` **pronouns**: `string`[]
-
-My preferred pronouns
-
-**`returns`**
-he, him, his
-
-___
-
-### children
-
-▪ `Static` `Readonly` **children**: ``2``
-
-How many children I have
 
 ## Constructors
 
 ### constructor
 
 • **new Snickbit**()
+
+## Properties
+
+### children
+
+• `Readonly` **children**: ``2``
+
+How many children I have
+
+___
+
+### pronouns
+
+• `Readonly` **pronouns**: [``"he"``, ``"him"``, ``"his"``]
+
+My preferred pronouns
+
+___
+
+### realName
+
+• `Readonly` **realName**: ``"Nick Lowe"``
+
+The name I go by when I'm not coding.
 
 ## Methods
 
@@ -67,11 +72,155 @@ Add a project to the list of projects
 
 | Name | Type |
 | :------ | :------ |
-| `project` | `SnickbitProject` |
+| `project` | [`SnickbitProject`](../interfaces/SnickbitProject.md) |
 
 #### Returns
 
 `void`
+
+___
+
+### beWithFamily
+
+▸ **beWithFamily**(): `Promise`<``"👧👩👨👩👦 x ⏳"``\>
+
+Spend time with my family
+
+#### Returns
+
+`Promise`<``"👧👩👨👩👦 x ⏳"``\>
+
+___
+
+### knownDatabases
+
+▸ **knownDatabases**(): `string`[]
+
+Get the list of databases I know
+
+#### Returns
+
+`string`[]
+
+___
+
+### knownFrameworks
+
+▸ **knownFrameworks**(): `string`[]
+
+Get the list of frameworks I know
+
+#### Returns
+
+`string`[]
+
+___
+
+### knownLanguages
+
+▸ **knownLanguages**(): `string`[]
+
+Get the list of languages I know
+
+#### Returns
+
+`string`[]
+
+___
+
+### knownTools
+
+▸ **knownTools**(): `string`[]
+
+Get the list of tools I know
+
+#### Returns
+
+`string`[]
+
+___
+
+### learnDatabase
+
+▸ **learnDatabase**(`database`): `void`
+
+Learn a new database system
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `database` | `string` |
+
+#### Returns
+
+`void`
+
+___
+
+### learnFramework
+
+▸ **learnFramework**(`framework`): `void`
+
+Learn a new framework
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `framework` | `string` |
+
+#### Returns
+
+`void`
+
+___
+
+### learnLanguage
+
+▸ **learnLanguage**(`language`): `void`
+
+Learn a new programming language
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `language` | `string` |
+
+#### Returns
+
+`void`
+
+___
+
+### learnTool
+
+▸ **learnTool**(`tool`): `void`
+
+Learn a new tool
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `tool` | `string` |
+
+#### Returns
+
+`void`
+
+___
+
+### playVideoGames
+
+▸ **playVideoGames**(): `Promise`<``"(🎮 + 💀) x ⏳"``\>
+
+Spend time playing video games badly
+
+#### Returns
+
+`Promise`<``"(🎮 + 💀) x ⏳"``\>
 
 ___
 
@@ -96,39 +245,15 @@ Spend too much time writing code.
 
 ___
 
-### beWithFamily
-
-▸ **beWithFamily**(): `Promise`<``"👧👩👨👩👦 x ⏳"``\>
-
-Spend time with my family
-
-#### Returns
-
-`Promise`<``"👧👩👨👩👦 x ⏳"``\>
-
-___
-
-### playVideoGames
-
-▸ **playVideoGames**(): `Promise`<``"(🎮 + 💀) x ⏳"``\>
-
-Spend time playing video games badly
-
-#### Returns
-
-`Promise`<``"(🎮 + 💀) x ⏳"``\>
-
-___
-
 ### writeMusic
 
-▸ **writeMusic**(): `Promise`<`MusicMaking`\>
+▸ **writeMusic**(): `Promise`<[`MusicMaking`](../README.md#musicmaking)\>
 
 Spend time writing music
 
 #### Returns
 
-`Promise`<`MusicMaking`\>
+`Promise`<[`MusicMaking`](../README.md#musicmaking)\>
 
 🎸 x ⏳ \
 🎤 x ⏳ \
