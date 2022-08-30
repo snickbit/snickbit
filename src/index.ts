@@ -1,7 +1,7 @@
 /**
  * A Snickbit Project
  */
-interface SnickbitProject {
+export interface SnickbitProject {
 	name: string
 	description: string
 	url: string
