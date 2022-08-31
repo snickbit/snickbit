@@ -11,7 +11,7 @@ describe('snickbit methods', () => {
 	})
 
 	it('should have a pronouns property set to [he, him, his]', () => {
-		expect(instance.pronouns).toEqual(expect.arrayContaining(['he', 'him', 'his']))
+		expect(instance.pronouns).toStrictEqual(['he', 'him', 'his'])
 	})
 
 	it('should have a children property set to 2', () => {
@@ -27,11 +27,11 @@ describe('snickbit methods', () => {
 	})
 
 	it('should return 💻 x ⏳ x 2 when calling writeCode', async () => {
-		expect(await instance.writeCode()).toBe('💻 x ⏳ x 2')
+		await expect(instance.writeCode()).resolves.toBe('💻 x ⏳ x 2')
 	})
 
 	it('should return 💻 x ⏳ x 2 for snickbit.com when calling writeCode(`snickbit.com`)', async () => {
-		expect(await instance.writeCode('snickbit.com')).toBe('💻 x ⏳ x 2 for snickbit.com')
+		await expect(instance.writeCode('snickbit.com')).resolves.toBe('💻 x ⏳ x 2 for snickbit.com')
 	})
 
 	it('should have an async `beWithFamily` function', () => {
@@ -39,7 +39,7 @@ describe('snickbit methods', () => {
 	})
 
 	it('should return 👧👩👨👩👦 x ⏳ when calling beWithFamily', async () => {
-		expect(await instance.beWithFamily()).toBe('👧👩👨👩👦 x ⏳')
+		await expect(instance.beWithFamily()).resolves.toBe('👧👩👨👩👦 x ⏳')
 	})
 
 	it('should have an async `playVideoGames` function', () => {
@@ -47,7 +47,7 @@ describe('snickbit methods', () => {
 	})
 
 	it('should return (🎮 + 💀) x ⏳ when calling playVideoGames', async () => {
-		expect(await instance.playVideoGames()).toBe('(🎮 + 💀) x ⏳')
+		await expect(instance.playVideoGames()).resolves.toBe('(🎮 + 💀) x ⏳')
 	})
 
 	it('should have an async `writeMusic` function', () => {
@@ -56,7 +56,12 @@ describe('snickbit methods', () => {
 
 	it('should return one of 🎸 x ⏳ | 🎤 x ⏳ | 🎹 x ⏳ | (🎛🎚 + 🎧) x ⏳ when calling writeMusic 6 times', async () => {
 		for (let i = 0; i < 6; i++) {
-			expect(['🎸 x ⏳', '🎤 x ⏳', '🎹 x ⏳', '(🎛🎚 + 🎧) x ⏳'].includes(await instance.writeMusic())).toBeTruthy()
+			expect([
+				'🎸 x ⏳',
+				'🎤 x ⏳',
+				'🎹 x ⏳',
+				'(🎛🎚 + 🎧) x ⏳'
+			].includes(await instance.writeMusic())).toBeTruthy()
 		}
 	})
 })

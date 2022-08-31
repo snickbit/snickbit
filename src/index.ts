@@ -1,7 +1,7 @@
 /**
  * A Snickbit Project
  */
-interface SnickbitProject {
+export interface SnickbitProject {
 	name: string
 	description: string
 	url: string
@@ -96,19 +96,23 @@ export class Snickbit {
 	/**
 	 * Some projects I'm currently working on
 	 */
-	private projects: SnickbitProject[] = [{
-		name: 'snickbit.com',
-		description: 'My personal website built with Quasar (vue.js), Feathers.js, and MongoDB.',
-		url: 'https://snickbit.com'
-	}, {
-		name: `Arbiter's Aide`,
-		description: 'Laravel & Vue SPA web app for organizing Table Top RPG campaigns like Dungeons & Dragons. Uses Socket.io & Redis for real-time updates.',
-		url: 'https://arbitersaide.com'
-	}, {
-		name: 'IsThisDubbed?',
-		description: 'Single-serving website built with Laravel. Uses multiple APIs, web scraping, and community moderation for data and corrections',
-		url: 'https://isthisdubbed.com'
-	}]
+	private projects: SnickbitProject[] = [
+		{
+			name: 'snickbit.com',
+			description: 'My personal website built with Quasar (vue.js), Feathers.js, and MongoDB.',
+			url: 'https://snickbit.com'
+		},
+		{
+			name: `Arbiter's Aide`,
+			description: 'Laravel & Vue SPA web app for organizing Table Top RPG campaigns like Dungeons & Dragons. Uses Socket.io & Redis for real-time updates.',
+			url: 'https://arbitersaide.com'
+		},
+		{
+			name: 'IsThisDubbed?',
+			description: 'Single-serving website built with Laravel. Uses multiple APIs, web scraping, and community moderation for data and corrections',
+			url: 'https://isthisdubbed.com'
+		}
+	]
 
 	/**
 	 * Singleton instance of Snickbit. There can only be one.
@@ -128,6 +132,66 @@ export class Snickbit {
 	 */
 	addProject(project: SnickbitProject): void {
 		this.projects.push(project)
+	}
+
+	/**
+	 * Learn a new programming language
+	 * @param language
+	 */
+	learnLanguage(language: string): void {
+		this.languages.push(language)
+	}
+
+	/**
+	 * Learn a new database system
+	 * @param database
+	 */
+	learnDatabase(database: string): void {
+		this.databases.push(database)
+	}
+
+	/**
+	 * Learn a new framework
+	 * @param framework
+	 */
+	learnFramework(framework: string): void {
+		this.frameworks.push(framework)
+	}
+
+	/**
+	 * Learn a new tool
+	 * @param tool
+	 */
+	learnTool(tool: string): void {
+		this.tools.push(tool)
+	}
+
+	/**
+	 * Get the list of languages I know
+	 */
+	knownLanguages(): string[] {
+		return this.languages
+	}
+
+	/**
+	 * Get the list of databases I know
+	 */
+	knownDatabases(): string[] {
+		return this.databases
+	}
+
+	/**
+	 * Get the list of frameworks I know
+	 */
+	knownFrameworks(): string[] {
+		return this.frameworks
+	}
+
+	/**
+	 * Get the list of tools I know
+	 */
+	knownTools(): string[] {
+		return this.tools
 	}
 
 	/**
@@ -176,68 +240,6 @@ export class Snickbit {
 			'🎹 x ⏳',
 			'(🎛🎚 + 🎧) x ⏳'
 		][Math.floor(Math.random() * 4)] as MusicMaking
-	}
-
-	/**
-	 * Learn a new programming language
-	 * @param language
-	 */
-	learnLanguage(language: string): void {
-		this.languages.push(language)
-	}
-
-	/**
-	 * Learn a new database system
-	 * @param database
-	 */
-	learnDatabase(database: string): void {
-		this.databases.push(database)
-	}
-
-	/**
-	 * Learn a new framework
-	 * @param framework
-	 */
-	learnFramework(framework: string): void {
-		this.frameworks.push(framework)
-	}
-
-	/**
-	 * Learn a new tool
-	 * @param tool
-	 */
-	learnTool(tool: string): void {
-		this.tools.push(tool)
-	}
-
-
-	/**
-	 * Get the list of languages I know
-	 */
-	knownLanguages(): string[] {
-		return this.languages
-	}
-
-
-	/**
-	 * Get the list of databases I know
-	 */
-	knownDatabases(): string[] {
-		return this.databases
-	}
-
-	/**
-	 * Get the list of frameworks I know
-	 */
-	knownFrameworks(): string[] {
-		return this.frameworks
-	}
-
-	/**
-	 * Get the list of tools I know
-	 */
-	knownTools(): string[] {
-		return this.tools
 	}
 }
 
