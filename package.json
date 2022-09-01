@@ -22,6 +22,7 @@
 		"dev:types": "tsc --emitDeclarationOnly --declarationMap --declarationDir .types",
 		"docs": "typedoc",
 		"test": "jest",
+		"test:ci": "jest --ci --onlyChanged",
 		"watch": "concurrently -k -c magenta,cyan pnpm:watch:*",
 		"watch:dev": "pnpm run dev --watch",
 		"watch:types": "pnpm run dev:types --watch"
